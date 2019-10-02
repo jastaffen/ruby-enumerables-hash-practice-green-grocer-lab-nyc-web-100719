@@ -1,4 +1,4 @@
-#require 'pry'
+require 'pry'
 def consolidate_cart(cart)
   new_hash = {}
   cart.each do |hash|

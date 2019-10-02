@@ -1,4 +1,4 @@
-require 'pry'
+#require 'pry'
 def consolidate_cart(cart)
   new_hash = {}
   cart.each do |hash|
@@ -47,7 +47,7 @@ end
 
 def checkout(cart, coupons)
   consolidated_cart = consolidate_cart(cart)
-  binding.pry
+  #binding.pry
   applied_coupons = apply_coupons(consolidated_cart, coupons)
   applied_clearance = apply_clearance(applied_coupons)
   applied_clearance.reduce(0) do |sum, item|

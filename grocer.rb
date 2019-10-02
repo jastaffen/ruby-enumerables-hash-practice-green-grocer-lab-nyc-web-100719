@@ -49,6 +49,6 @@ def checkout(cart, coupons)
   consolidated_cart = consolidate_cart(cart)
   applied_coupons = apply_coupons(consolidated_cart, coupons)
   applied_clearance = apply_clearance(applied_coupons)
-  total = applied_clearance.reduce(0) {|sum, (key, value)| sum + value[:price]}
+  total = applied_clearance.reduce(0) {|sum, (key, value)| sum + (value[:price] * value[:count])}
 
 end

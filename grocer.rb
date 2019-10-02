@@ -46,7 +46,5 @@ end
 
 def checkout(cart, coupons)
   consolidated_cart = consolidate_cart(cart)
-  consolidated_cart.each do |key, value|
-    consolidated_cart[key][:price]
   end
 end

@@ -51,5 +51,4 @@ def checkout(cart, coupons)
   applied_clearance = apply_clearance(applied_coupons)
   total = applied_clearance.reduce(0) {|sum, (key, value)| sum + value[:price]}
 
-  total
 end

@@ -52,4 +52,5 @@ def checkout(cart, coupons)
   total = applied_clearance.reduce(0) {|sum, (key, value)| sum + value[:price]}
   if total > 100]
     total -= (total*0.10).round(2)
+  end
 end

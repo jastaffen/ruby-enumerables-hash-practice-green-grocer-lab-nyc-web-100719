@@ -50,8 +50,4 @@ def checkout(cart, coupons)
   #binding.pry
   applied_coupons = apply_coupons(consolidated_cart, coupons)
   applied_clearance = apply_clearance(applied_coupons)
-  applied_clearance.reduce(0) do |sum, item|
-    sum = sum + item
-  end
-  sum
 end

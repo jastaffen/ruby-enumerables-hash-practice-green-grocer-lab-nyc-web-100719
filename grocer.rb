@@ -53,4 +53,6 @@ def checkout(cart, coupons)
   applied_clearance.each do |key, value|
     num = applied_clearance[key][:price]
     applied_clearance.reduce(0) {|sum, num| sum + num}
+  end
+  sum
 end
